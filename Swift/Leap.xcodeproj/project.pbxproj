@@ -13,6 +13,8 @@
 		E32E280E19D23A1B00E92EAB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E32E280D19D23A1B00E92EAB /* Images.xcassets */; };
 		E32E281119D23A1B00E92EAB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E32E280F19D23A1B00E92EAB /* LaunchScreen.xib */; };
 		E32E281D19D23A1C00E92EAB /* LeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32E281C19D23A1C00E92EAB /* LeapTests.swift */; };
+		E32E282719D23A8400E92EAB /* Year.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32E282619D23A8400E92EAB /* Year.swift */; };
+		E32E282819D23A8400E92EAB /* Year.swift in Sources */ = {isa = PBXBuildFile; fileRef = E32E282619D23A8400E92EAB /* Year.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 		E32E281619D23A1C00E92EAB /* LeapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E32E281B19D23A1C00E92EAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E32E281C19D23A1C00E92EAB /* LeapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeapTests.swift; sourceTree = "<group>"; };
+		E32E282619D23A8400E92EAB /* Year.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Year.swift; path = Leap/Year.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,7 @@
 				E32E280A19D23A1B00E92EAB /* Main.storyboard */,
 				E32E280D19D23A1B00E92EAB /* Images.xcassets */,
 				E32E280F19D23A1B00E92EAB /* LaunchScreen.xib */,
+				E32E282619D23A8400E92EAB /* Year.swift */,
 				E32E280419D23A1B00E92EAB /* Supporting Files */,
 			);
 			path = Leap;
@@ -213,6 +217,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E32E280919D23A1B00E92EAB /* ViewController.swift in Sources */,
+				E32E282719D23A8400E92EAB /* Year.swift in Sources */,
 				E32E280719D23A1B00E92EAB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,6 +226,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E32E282819D23A8400E92EAB /* Year.swift in Sources */,
 				E32E281D19D23A1C00E92EAB /* LeapTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,6 +413,7 @@
 				E32E282219D23A1C00E92EAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E32E282319D23A1C00E92EAB /* Build configuration list for PBXNativeTarget "LeapTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +422,7 @@
 				E32E282519D23A1C00E92EAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
