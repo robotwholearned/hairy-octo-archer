@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		E33AF95019D20625008169E3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E33AF94F19D20625008169E3 /* main.m */; };
+		E33AF95819D2064D008169E3 /* Bob.m in Sources */ = {isa = PBXBuildFile; fileRef = E33AF95719D2064D008169E3 /* Bob.m */; };
+		E33AF96419D20F0B008169E3 /* BobTest.m in Sources */ = {isa = PBXBuildFile; fileRef = E33AF96319D20F0B008169E3 /* BobTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +27,22 @@
 /* Begin PBXFileReference section */
 		E33AF94C19D20625008169E3 /* Bob */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Bob; sourceTree = BUILT_PRODUCTS_DIR; };
 		E33AF94F19D20625008169E3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E33AF95619D2064D008169E3 /* Bob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bob.h; sourceTree = "<group>"; };
+		E33AF95719D2064D008169E3 /* Bob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bob.m; sourceTree = "<group>"; };
+		E33AF95F19D20F0B008169E3 /* BobTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BobTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E33AF96219D20F0B008169E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E33AF96319D20F0B008169E3 /* BobTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BobTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E33AF94919D20625008169E3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E33AF95C19D20F0B008169E3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				E33AF94E19D20625008169E3 /* Bob */,
+				E33AF96019D20F0B008169E3 /* BobTest */,
 				E33AF94D19D20625008169E3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				E33AF94C19D20625008169E3 /* Bob */,
+				E33AF95F19D20F0B008169E3 /* BobTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +74,27 @@
 			isa = PBXGroup;
 			children = (
 				E33AF94F19D20625008169E3 /* main.m */,
+				E33AF95619D2064D008169E3 /* Bob.h */,
+				E33AF95719D2064D008169E3 /* Bob.m */,
 			);
 			path = Bob;
+			sourceTree = "<group>";
+		};
+		E33AF96019D20F0B008169E3 /* BobTest */ = {
+			isa = PBXGroup;
+			children = (
+				E33AF96319D20F0B008169E3 /* BobTest.m */,
+				E33AF96119D20F0B008169E3 /* Supporting Files */,
+			);
+			path = BobTest;
+			sourceTree = "<group>";
+		};
+		E33AF96119D20F0B008169E3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E33AF96219D20F0B008169E3 /* Info.plist */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +117,23 @@
 			productReference = E33AF94C19D20625008169E3 /* Bob */;
 			productType = "com.apple.product-type.tool";
 		};
+		E33AF95E19D20F0B008169E3 /* BobTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E33AF96519D20F0B008169E3 /* Build configuration list for PBXNativeTarget "BobTest" */;
+			buildPhases = (
+				E33AF95B19D20F0B008169E3 /* Sources */,
+				E33AF95C19D20F0B008169E3 /* Frameworks */,
+				E33AF95D19D20F0B008169E3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BobTest;
+			productName = BobTest;
+			productReference = E33AF95F19D20F0B008169E3 /* BobTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +144,9 @@
 				ORGANIZATIONNAME = robotwholearned;
 				TargetAttributes = {
 					E33AF94B19D20625008169E3 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					E33AF95E19D20F0B008169E3 = {
 						CreatedOnToolsVersion = 6.0.1;
 					};
 				};
@@ -109,9 +164,20 @@
 			projectRoot = "";
 			targets = (
 				E33AF94B19D20625008169E3 /* Bob */,
+				E33AF95E19D20F0B008169E3 /* BobTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E33AF95D19D20F0B008169E3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E33AF94819D20625008169E3 /* Sources */ = {
@@ -119,6 +185,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				E33AF95019D20625008169E3 /* main.m in Sources */,
+				E33AF95819D2064D008169E3 /* Bob.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E33AF95B19D20F0B008169E3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E33AF96419D20F0B008169E3 /* BobTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +288,38 @@
 			};
 			name = Release;
 		};
+		E33AF96619D20F0B008169E3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BobTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E33AF96719D20F0B008169E3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = BobTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -230,6 +337,14 @@
 			buildConfigurations = (
 				E33AF95419D20625008169E3 /* Debug */,
 				E33AF95519D20625008169E3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E33AF96519D20F0B008169E3 /* Build configuration list for PBXNativeTarget "BobTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E33AF96619D20F0B008169E3 /* Debug */,
+				E33AF96719D20F0B008169E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
