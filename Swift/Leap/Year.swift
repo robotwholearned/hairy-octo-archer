@@ -10,18 +10,7 @@ import Foundation
 
 class Year: NSObject {
     
-    var isLeapYear: Bool = false
-    var year: Int
-    
-    init(calendarYear: Int) {
-        year = calendarYear
-        
-        super.init()
-        
-        isLeapYear = validLeap()
-    }
-    
-    func validLeap() -> Bool{
+    var isLeapYear: Bool {
         if self.year % 4 == 0{
             if self.year % 100 == 0{
                 if self.year % 400 == 0{
@@ -30,8 +19,15 @@ class Year: NSObject {
                 return false
             }
             return true
-        }
-        return false
+            }
+            return false
     }
+    var year: Int
     
+    init(calendarYear: Int) {
+        year = calendarYear
+        
+        super.init()
+        
+    }
 }
