@@ -10,15 +10,13 @@ import Foundation
 
 class Year: NSObject {
     
+    var year: Int
     var isLeapYear: Bool {
         return year % 4 == 0 && year % 100 != 0 || year % 400 == 0
     }
-    var year: Int
     
     init(calendarYear: Int) {
         year = calendarYear
-        
         super.init()
-        
     }
 }
